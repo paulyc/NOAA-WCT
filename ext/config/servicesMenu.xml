@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<servicesMenu>
+
+	<!-- type: REMOTE_DIR, THREDDS_CATALOG, DIRECT_URL -->
+
+	<folder name="NOAA-NWS Radar Sites (Level-III)" >
+
+
+		<folder name="Eastern">
+		            
+			<folder name="KAKQ,KBGM,KBOX,KBUF,KCAE,KCBW,KCCX,KCLE,KCLX,KCXX,KDIX,KDOX,KENX,KFCX,KGSP,KGYX,KILN,KLTX,KLWX,KMHX,KOKX,KPBZ,KRAX,KRLX,KTYX" delimRegex="," substitution="site" tolower="true">
+			
+				<folder name="Reflectivity" >
+					<entry name="Hybrid Scan Reflectivity"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.32dhr/SI.${site}/sn.last"  />
+					<entry name="Composite Reflectivity"     type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p37cr/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94ra/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r1/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94rb/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r2/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Precipitation" >
+					<entry name="Precipitation Rate"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last"  />
+					<entry name="One Hour Accumulation (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 3hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 24hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last"  />
+					<entry name="One Hour Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last"  />
+					<entry name="Storm Total Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last"  />
+					<entry name="Three Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last"  />		
+					<entry name="Dig. Precip. Array (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last"  />		
+					<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last"  />		
+				</folder>
+				<folder name="Severe Weather" >
+					<entry name="Hybrid Hydrometeor Classification"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.177hh/SI.${site}/sn.last"  />
+					<entry name="Storm Tracking"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.58sti/SI.${site}/sn.last"  />
+					<entry name="Storm Structure"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p62ss/SI.${site}/sn.last"  />
+					<entry name="Hail Index"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p59hi/SI.${site}/sn.last"  />
+					<entry name="Mesocyclone"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.141md/SI.${site}/sn.last"  />
+					<entry name="Tornado Vortex Signature"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.61tvs/SI.${site}/sn.last"  />
+					
+					<entry name="Echo Tops"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.135et/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.134il/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL) (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.57vil/SI.${site}/sn.last"  />
+					
+					<entry name="Hybrid Hydrometeor Classification (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h0/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165ha/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h1/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165hb/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h2/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Velocity" >
+					<entry name="Storm Relative Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm0/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm1/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm2/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm3/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v0/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99va/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v1/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99vb/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v2/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v3/SI.${site}/sn.last"  />
+					<entry name="Base Spectrum Width (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p30sw/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Dual-Polarization" >
+					<entry name="Differential Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x0/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xa/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x1/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xb/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x2/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x3/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c0/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161ca/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c1/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161cb/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c2/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c3/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k0/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163ka/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k1/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163kb/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k2/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Other" >
+					<entry name="Free Text Message" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.75ftm/SI.${site}/sn.last"  />
+					<entry name="Status Log" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.152rs/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m0/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166ma/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m1/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166mb/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m2/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m3/SI.${site}/sn.last"  />
+				</folder>
+			</folder>
+		</folder>
+
+		<folder name="Central">
+		            
+			<folder name="KABR,KAPX,KARX,KBIS,KCYS,KDDC,KDLH,KDMX,KDTX,KDVN,KEAX,KFSD,KFTG,KGJX,KGLD,KGRB,KGRR,KHPX,KICT,KILX,KIND,KIWX,KJKL,KLNX,KLOT,KLSX,KLVX,KMBX,KMKX,KMPX,KMQT,KMVX,KOAX,KPAH,KPUX,KRIW,KSGF,KTWX,KUDX,KUEX,KVWX" delimRegex="," substitution="site" tolower="true">
+			
+				<folder name="Reflectivity" >
+					<entry name="Hybrid Scan Reflectivity"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.32dhr/SI.${site}/sn.last"  />
+					<entry name="Composite Reflectivity"     type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p37cr/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94ra/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r1/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94rb/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r2/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Precipitation" >
+					<entry name="Precipitation Rate"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last"  />
+					<entry name="One Hour Accumulation (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 3hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 24hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last"  />
+					<entry name="One Hour Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last"  />
+					<entry name="Storm Total Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last"  />
+					<entry name="Three Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last"  />		
+					<entry name="Dig. Precip. Array (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last"  />		
+					<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last"  />		
+				</folder>
+				<folder name="Severe Weather" >
+					<entry name="Hybrid Hydrometeor Classification"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.177hh/SI.${site}/sn.last"  />
+					<entry name="Storm Tracking"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.58sti/SI.${site}/sn.last"  />
+					<entry name="Storm Structure"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p62ss/SI.${site}/sn.last"  />
+					<entry name="Hail Index"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p59hi/SI.${site}/sn.last"  />
+					<entry name="Mesocyclone"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.141md/SI.${site}/sn.last"  />
+					<entry name="Tornado Vortex Signature"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.61tvs/SI.${site}/sn.last"  />
+					
+					<entry name="Echo Tops"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.135et/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.134il/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL) (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.57vil/SI.${site}/sn.last"  />
+					
+					<entry name="Hybrid Hydrometeor Classification (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h0/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165ha/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h1/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165hb/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h2/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Velocity" >
+					<entry name="Storm Relative Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm0/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm1/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm2/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm3/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v0/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99va/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v1/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99vb/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v2/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v3/SI.${site}/sn.last"  />
+					<entry name="Base Spectrum Width (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p30sw/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Dual-Polarization" >
+					<entry name="Differential Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x0/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xa/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x1/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xb/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x2/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x3/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c0/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161ca/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c1/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161cb/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c2/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c3/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k0/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163ka/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k1/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163kb/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k2/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Other" >
+					<entry name="Free Text Message" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.75ftm/SI.${site}/sn.last"  />
+					<entry name="Status Log" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.152rs/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m0/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166ma/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m1/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166mb/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m2/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m3/SI.${site}/sn.last"  />
+				</folder>
+			</folder>
+		</folder>
+
+		<folder name="South">            
+			<folder name="KABX,KAMA,KAMX,KBMX,KBRO,KBYX,KCRI,KCRP,KDFX,KDGX,KDYX,KEOX,KEPZ,KEVX,KEWX,KFDR,KFDX,KFFC,KFWS,KGRK,KGWX,KHDX,KHGX,KHTX,KINX,KJAX,KJGX,KLBB,KLCH,KLIX,KLZK,KMAF,KMLB,KMOB,KMRX,KMXX,KNQA,KOHX,KPOE,KSHV,KSJT,KSRX,KTBW,KTLH,KTLX,KVAX,KVNX" delimRegex="," substitution="site" tolower="true">
+			
+				<folder name="Reflectivity" >
+					<entry name="Hybrid Scan Reflectivity"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.32dhr/SI.${site}/sn.last"  />
+					<entry name="Composite Reflectivity"     type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p37cr/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94ra/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r1/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94rb/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r2/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Precipitation" >
+					<entry name="Precipitation Rate"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last"  />
+					<entry name="One Hour Accumulation (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 3hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 24hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last"  />
+					<entry name="One Hour Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last"  />
+					<entry name="Storm Total Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last"  />
+					<entry name="Three Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last"  />		
+					<entry name="Dig. Precip. Array (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last"  />		
+					<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last"  />		
+				</folder>
+				<folder name="Severe Weather" >
+					<entry name="Hybrid Hydrometeor Classification"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.177hh/SI.${site}/sn.last"  />
+					<entry name="Storm Tracking"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.58sti/SI.${site}/sn.last"  />
+					<entry name="Storm Structure"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p62ss/SI.${site}/sn.last"  />
+					<entry name="Hail Index"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p59hi/SI.${site}/sn.last"  />
+					<entry name="Mesocyclone"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.141md/SI.${site}/sn.last"  />
+					<entry name="Tornado Vortex Signature"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.61tvs/SI.${site}/sn.last"  />
+					
+					<entry name="Echo Tops"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.135et/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.134il/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL) (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.57vil/SI.${site}/sn.last"  />
+					
+					<entry name="Hybrid Hydrometeor Classification (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h0/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165ha/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h1/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165hb/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h2/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Velocity" >
+					<entry name="Storm Relative Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm0/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm1/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm2/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm3/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v0/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99va/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v1/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99vb/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v2/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v3/SI.${site}/sn.last"  />
+					<entry name="Base Spectrum Width (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p30sw/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Dual-Polarization" >
+					<entry name="Differential Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x0/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xa/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x1/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xb/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x2/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x3/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c0/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161ca/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c1/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161cb/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c2/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c3/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k0/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163ka/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k1/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163kb/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k2/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Other" >
+					<entry name="Free Text Message" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.75ftm/SI.${site}/sn.last"  />
+					<entry name="Status Log" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.152rs/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m0/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166ma/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m1/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166mb/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m2/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m3/SI.${site}/sn.last"  />
+				</folder>
+			</folder>
+		</folder>
+
+		<folder name="West">
+			<folder name="KATX,KBBX,KBHX,KBLX,KCBX,KDAX,KEMX,KESX,KEYX,KFSX,KGGW,KHNX,KICX,KIWA,KLGX,KLRX,KMAX,KMSX,KMTX,KMUX,KNKX,KOTX,KPDT,KRGX,KRTX,KSFX,KSOX,KTFX,KVBX,KVTX,KYUX" delimRegex="," substitution="site" tolower="true">
+			
+				<folder name="Reflectivity" >
+					<entry name="Hybrid Scan Reflectivity"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.32dhr/SI.${site}/sn.last"  />
+					<entry name="Composite Reflectivity"     type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p37cr/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94ra/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r1/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94rb/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r2/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Precipitation" >
+					<entry name="Precipitation Rate"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last"  />
+					<entry name="One Hour Accumulation (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 3hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 24hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last"  />
+					<entry name="One Hour Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last"  />
+					<entry name="Storm Total Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last"  />
+					<entry name="Three Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last"  />		
+					<entry name="Dig. Precip. Array (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last"  />		
+					<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last"  />		
+				</folder>
+				<folder name="Severe Weather" >
+					<entry name="Hybrid Hydrometeor Classification"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.177hh/SI.${site}/sn.last"  />
+					<entry name="Storm Tracking"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.58sti/SI.${site}/sn.last"  />
+					<entry name="Storm Structure"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p62ss/SI.${site}/sn.last"  />
+					<entry name="Hail Index"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p59hi/SI.${site}/sn.last"  />
+					<entry name="Mesocyclone"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.141md/SI.${site}/sn.last"  />
+					<entry name="Tornado Vortex Signature"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.61tvs/SI.${site}/sn.last"  />
+					
+					<entry name="Echo Tops"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.135et/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.134il/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL) (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.57vil/SI.${site}/sn.last"  />
+					
+					<entry name="Hybrid Hydrometeor Classification (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h0/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165ha/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h1/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165hb/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h2/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Velocity" >
+					<entry name="Storm Relative Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm0/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm1/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm2/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm3/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v0/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99va/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v1/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99vb/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v2/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v3/SI.${site}/sn.last"  />
+					<entry name="Base Spectrum Width (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p30sw/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Dual-Polarization" >
+					<entry name="Differential Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x0/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xa/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x1/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xb/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x2/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x3/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c0/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161ca/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c1/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161cb/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c2/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c3/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k0/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163ka/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k1/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163kb/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k2/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Other" >
+					<entry name="Free Text Message" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.75ftm/SI.${site}/sn.last"  />
+					<entry name="Status Log" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.152rs/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m0/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166ma/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m1/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166mb/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m2/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m3/SI.${site}/sn.last"  />
+				</folder>
+			</folder>
+		</folder>
+		
+		<folder name="Alaska, Hawaii, Puerto Rico">            
+			<folder name="PABC,PACG,PAEC,PAHG,PAIH,PAKC,PAPD,PHKI,PHKM,PHMO,PHWA,TJUA" delimRegex="," substitution="site" tolower="true">
+			
+				<folder name="Reflectivity" >
+					<entry name="Hybrid Scan Reflectivity"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.32dhr/SI.${site}/sn.last"  />
+					<entry name="Composite Reflectivity"     type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p37cr/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94ra/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r1/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94rb/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r2/SI.${site}/sn.last"  />
+					<entry name="Base Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p94r3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Precipitation" >
+					<entry name="Precipitation Rate"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last"  />
+					<entry name="One Hour Accumulation (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 3hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last"  />
+					<entry name="User Sel. Accum. 24hr"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last"  />
+					<entry name="One Hour Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last"  />
+					<entry name="Storm Total Diff. Accum."   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last"  />
+					<entry name="One Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last"  />
+					<entry name="Three Hour Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last"  />
+					<entry name="Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last"  />		
+					<entry name="Dig. Precip. Array (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last"  />		
+					<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last"  />		
+				</folder>
+				<folder name="Severe Weather" >
+					<entry name="Hybrid Hydrometeor Classification"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.177hh/SI.${site}/sn.last"  />
+					<entry name="Storm Tracking"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.58sti/SI.${site}/sn.last"  />
+					<entry name="Storm Structure"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p62ss/SI.${site}/sn.last"  />
+					<entry name="Hail Index"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p59hi/SI.${site}/sn.last"  />
+					<entry name="Mesocyclone"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.141md/SI.${site}/sn.last"  />
+					<entry name="Tornado Vortex Signature"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.61tvs/SI.${site}/sn.last"  />
+					
+					<entry name="Echo Tops"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.135et/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.134il/SI.${site}/sn.last"  />
+					<entry name="Vertically Integrated Liquid (VIL) (Categories)"   type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.57vil/SI.${site}/sn.last"  />
+					
+					<entry name="Hybrid Hydrometeor Classification (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h0/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165ha/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h1/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165hb/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h2/SI.${site}/sn.last"  />
+					<entry name="Hybrid Hydrometeor Classification (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.165h3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Velocity" >
+					<entry name="Storm Relative Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm0/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm1/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm2/SI.${site}/sn.last"  />
+					<entry name="Storm Relative Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.56rm3/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v0/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99va/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v1/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99vb/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v2/SI.${site}/sn.last"  />
+					<entry name="Base Velocity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p99v3/SI.${site}/sn.last"  />
+					<entry name="Base Spectrum Width (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.p30sw/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Dual-Polarization" >
+					<entry name="Differential Reflectivity (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x0/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xa/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x1/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159xb/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x2/SI.${site}/sn.last"  />
+					<entry name="Differential Reflectivity (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.159x3/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c0/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161ca/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c1/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161cb/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c2/SI.${site}/sn.last"  />
+					<entry name="Correlation Coefficient (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.161c3/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k0/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163ka/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k1/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163kb/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k2/SI.${site}/sn.last"  />
+					<entry name="Specific Differential Phase (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.163k3/SI.${site}/sn.last"  />
+				</folder>
+				<folder name="Other" >
+					<entry name="Free Text Message" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.75ftm/SI.${site}/sn.last"  />
+					<entry name="Status Log" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.152rs/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 0)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m0/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev A)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166ma/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 1)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m1/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev B)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166mb/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 2)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m2/SI.${site}/sn.last"  />
+					<entry name="Melting Layer (elev 3)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.166m3/SI.${site}/sn.last"  />
+				</folder>
+			</folder>
+		</folder>
+		
+	</folder>
+	
+	
+	<folder name="NOAA-NWS Forecasts (NDFD)" >
+		<folder name="ConUS">            
+			<folder name="1-3 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.rhm.bin"  />
+				<entry name="Ice Accumulation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.iceaccum.bin" />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.minrh.bin" />
+				<entry name="Daily Forecast of Reference Crop Evapotranspiration (FRET)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.fret.bin"  />
+				<entry name="Daily FRET Departure from Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.fretdep.bin" />
+				<entry name="Tropical Cyclone Tornado Threat" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tctt.bin"  />
+				<entry name="Tropical Cyclone Wind Threat" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwt.bin"  />
+				<entry name="Tropical Cyclone Storm Surge Threat" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcsst.bin"/>
+				<entry name="Tropical Cyclone Flooding Rain Threat" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcfrt.bin" />
+			</folder>
+			<folder name="4-7 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.rhm.bin"  />
+				<entry name="ds.p24less0025.bin" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.p24less0025.bin" />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.minrh.bin" />
+				<entry name="Daily Forecast of Reference Crop Evapotranspiration (FRET)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.fret.bin"  />
+				<entry name="Daily FRET Departure from Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.fretdep.bin" />
+			</folder>
+		</folder>
+		<folder name="Alaska">            
+			<folder name="1-3 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.rhm.bin"  />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.minrh.bin" />
+			</folder>
+			<folder name="4-7 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.rhm.bin"  />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.minrh.bin" />
+			</folder>
+		</folder>
+		<folder name="Hawaii">            
+			<folder name="1-3 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.rhm.bin"  />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.minrh.bin" />
+			</folder>
+			<folder name="4-7 days" >
+				<entry name="Maximum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.maxt.bin"  />
+				<entry name="Minimum Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.mint.bin"  />
+				<entry name="Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.temp.bin" />
+				<entry name="12-hour Probability of Precipitation" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.pop12.bin"  />
+				<entry name="Quantitative Precipitation Forecast" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.qpf.bin"  />
+				<entry name="Sky Cover" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.sky.bin" />
+				<entry name="Snow Amount" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.snow.bin" />
+				<entry name="Dewpoint" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.td.bin"/>
+				<entry name="Wind Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.wspd.bin"  />
+				<entry name="Wind Direction" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.wdir.bin" />
+				<entry name="Wind Gust Speed" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.wgust.bin"  />
+				<entry name="Hazards" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.wwa.bin"/>
+				<entry name="Significant Wave Height" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.waveh.bin"/>
+				<entry name="Apparent Temperature" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.apt.bin"  />
+				<entry name="Weather" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.wx.bin" />
+				<entry name="Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.rhm.bin"  />
+				<entry name="Maximum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.maxrh.bin" />
+				<entry name="Minimum Relative Humidity" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.minrh.bin" />
+			</folder>
+		</folder>
+		
+	</folder>
+	
+		
+	<folder name="NOAA-NWS Outlooks (NDFD)" >
+		<folder name="ConUS">            
+			<folder name="1-3 days" >
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv34c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv34i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv50c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv50i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv64c.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv64i.bin" />
+				<entry name="Convective Hazard Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.conhazo.bin"  />
+				<entry name="Probability of Damaging Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptstmwinds.bin"/>
+				<entry name="Probability of Extreme Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxtstmwinds.bin"/>
+				<entry name="Probability of Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptornado.bin"  />
+				<entry name="Probability of Extreme Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxtornado.bin"  />
+				<entry name="Probability of Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.phail.bin" />
+				<entry name="Probability of Extreme Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxhail.bin" />
+				<entry name="Critical/Extreme-Critical Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.critfireo.bin" />
+				<entry name="Dry Lightning Thunderstorm Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.dryfireo.bin"  />
+				<entry name="Total Probability of Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptotsvrtstm.bin"  />
+				<entry name="Total Probability of Extreme Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptotxsvrtstm.bin" />
+			</folder>
+			<folder name="4-7 days" >
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv34c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv34i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv50c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv50i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv64c.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.tcwspdabv64i.bin" />
+				<entry name="Convective Hazard Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.conhazo.bin"  />
+				<entry name="Probability of Damaging Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptstmwinds.bin"/>
+				<entry name="Probability of Extreme Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxtstmwinds.bin"/>
+				<entry name="Probability of Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptornado.bin"  />
+				<entry name="Probability of Extreme Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxtornado.bin"  />
+				<entry name="Probability of Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.phail.bin" />
+				<entry name="Probability of Extreme Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pxhail.bin" />
+				<entry name="Critical/Extreme-Critical Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.critfireo.bin" />
+				<entry name="Dry Lightning Thunderstorm Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.dryfireo.bin"  />
+				<entry name="Total Probability of Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptotsvrtstm.bin"  />
+				<entry name="Total Probability of Extreme Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.ptotxsvrtstm.bin" />
+			</folder>
+			<folder name="8-90 days" >
+				<entry name="8-14 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv14d.bin"  />
+				<entry name="8-14 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpabv14d.bin	"  />
+				<entry name="8-14 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw14d.bin" />
+				<entry name="8-14 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpblw14d.bin"  />
+				<entry name="30 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv30d.bin"  />
+				<entry name="30 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpabv30d.bin"  />
+				<entry name="30 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw30d.bin"  />
+				<entry name="30 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpblw30d.bin"  />
+				<entry name="90 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv90d.bin"  />
+				<entry name="90 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpabv90d.bin"  />
+				<entry name="90 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw90d.bin"  />
+				<entry name="90 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.tmpblw90d.bin"  />
+			</folder>
+		</folder>
+		<folder name="Alaska">            
+			<folder name="8-14 days" >
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv34c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv34i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv50c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv50i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv64c.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.tcwspdabv64i.bin" />
+				<entry name="Convective Hazard Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.conhazo.bin"  />
+				<entry name="Probability of Damaging Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.ptstmwinds.bin"/>
+				<entry name="Probability of Extreme Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.pxtstmwinds.bin"/>
+				<entry name="Probability of Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.ptornado.bin"  />
+				<entry name="Probability of Extreme Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.pxtornado.bin"  />
+				<entry name="Probability of Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.phail.bin" />
+				<entry name="Probability of Extreme Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.pxhail.bin" />
+				<entry name="Critical/Extreme-Critical Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.critfireo.bin" />
+				<entry name="Dry Lightning Thunderstorm Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.dryfireo.bin"  />
+				<entry name="Total Probability of Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.ptotsvrtstm.bin"  />
+				<entry name="Total Probability of Extreme Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.ptotxsvrtstm.bin" />
+			</folder>
+			<folder name="8-90 days" >
+				<entry name="8-14 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv14d.bin"  />
+				<entry name="8-14 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpabv14d.bin	"  />
+				<entry name="8-14 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw14d.bin" />
+				<entry name="8-14 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpblw14d.bin"  />
+				<entry name="30 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv30d.bin"  />
+				<entry name="30 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpabv30d.bin"  />
+				<entry name="30 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw30d.bin"  />
+				<entry name="30 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpblw30d.bin"  />
+				<entry name="90 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv90d.bin"  />
+				<entry name="90 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpabv90d.bin"  />
+				<entry name="90 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw90d.bin"  />
+				<entry name="90 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.tmpblw90d.bin"  />
+			</folder>
+		</folder>
+		<folder name="Hawaii">            
+			<folder name="8-14 days" >
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv34c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >34kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv34i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv50c.bin"/>
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >50kts (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv50i.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (cumulative)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv64c.bin"  />
+				<entry name="Probabilistic Tropical Cyclone Surface Wind Speeds >64kts  (incremental)" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.tcwspdabv64i.bin" />
+				<entry name="Convective Hazard Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.conhazo.bin"  />
+				<entry name="Probability of Damaging Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.ptstmwinds.bin"/>
+				<entry name="Probability of Extreme Thunderstorm Winds" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.pxtstmwinds.bin"/>
+				<entry name="Probability of Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.ptornado.bin"  />
+				<entry name="Probability of Extreme Tornadoes" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.pxtornado.bin"  />
+				<entry name="Probability of Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.phail.bin" />
+				<entry name="Probability of Extreme Hail" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.pxhail.bin" />
+				<entry name="Critical/Extreme-Critical Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.critfireo.bin" />
+				<entry name="Dry Lightning Thunderstorm Risk Fire Weather Outlook" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.dryfireo.bin"  />
+				<entry name="Total Probability of Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.ptotsvrtstm.bin"  />
+				<entry name="Total Probability of Extreme Severe Thunderstorms" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.ptotxsvrtstm.bin" />
+			</folder>
+			<folder name="8-90 days" >
+				<entry name="8-14 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv14d.bin"  />
+				<entry name="8-14 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpabv14d.bin	"  />
+				<entry name="8-14 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw14d.bin" />
+				<entry name="8-14 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpblw14d.bin"  />
+				<entry name="30 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv30d.bin"  />
+				<entry name="30 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpabv30d.bin"  />
+				<entry name="30 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw30d.bin"  />
+				<entry name="30 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpblw30d.bin"  />
+				<entry name="90 Day Precipitation Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv90d.bin"  />
+				<entry name="90 Day Temperature Above Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpabv90d.bin"  />
+				<entry name="90 Day Precipitation Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw90d.bin"  />
+				<entry name="90 Day Temperature Below Normal" type="DIRECT_URL" location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.tmpblw90d.bin"  />
+			</folder>
+		</folder>
+	</folder>
+	
+	
+	
+	
+	<folder name="NOAA-NCEI Climate Monitoring" >
+<!-- 		<folder name="By State">		 -->
+<!-- 	            <entry name="Cooling Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+<!-- 	            <entry name="Heating Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+<!-- 	            <entry name="Cooling Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+<!-- 	            <entry name="Cooling Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+<!-- 	            <entry name="Cooling Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+<!-- 	            <entry name="Cooling Degree Days" type="DIRECT_URL" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/climdiv-cddcst-v1.0.0-20190904" /> -->
+		
+<!-- 		</folder> -->
+		
+	            <entry name="Climate Division Products" type="REMOTE_DIR" location="https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/" />
+	            <entry name="Climate At A Glance - Yearly Temperature Anomalies" type="DIRECT_URL" location="https://www.ncei.noaa.gov/thredds/fileServer/gcag/yearly/NOAAGlobalTemp_annual.nc" />	            
+	            <entry name="Climate At A Glance - Monthly Temperature Anomalies" type="DIRECT_URL" location="https://www.ncei.noaa.gov/thredds/fileServer/gcag/monthly/NOAAGlobalTemp_monthly.nc" />	            
+	</folder>
+	
+	<folder name="NOAA-NCEP MRMS (Multi-Radar, Multi-Sensor)" >
+		<folder name="2D Products">
+            
+			<folder name="Reflectivity" >
+	            <entry name="CREF_1HR_MAX" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CREF_1HR_MAX/" />
+	            <entry name="HeightCompositeReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HeightCompositeReflectivity/" />
+	            <entry name="HeightLowLevelCompositeReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HeightLowLevelCompositeReflectivity/" />
+	            <entry name="LayerCompositeReflectivity_High" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/LayerCompositeReflectivity_High/" />
+	            <entry name="LayerCompositeReflectivity_Low" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/LayerCompositeReflectivity_Low/" />
+	            <entry name="LayerCompositeReflectivity_Super" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/LayerCompositeReflectivity_Super/" />
+	            <entry name="LowLevelCompositeReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/LowLevelCompositeReflectivity/" />
+	            <entry name="MergedBaseReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedBaseReflectivity/" />
+	            <entry name="MergedBaseReflectivityQC" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedBaseReflectivityQC/" />
+	            <entry name="MergedReflectivityComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedReflectivityComposite/" />
+	            <entry name="MergedReflectivityQCComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedReflectivityQCComposite/" />
+	            <entry name="MergedReflectivityQComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedReflectivityQComposite/" />
+	            <entry name="ReflectivityAtLowestAltitude" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ReflectivityAtLowestAltitude/" />
+	            <entry name="Reflectivity_-5C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/Reflectivity_-5C/" />
+	            <entry name="Reflectivity_-10C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/Reflectivity_-10C/" />
+	            <entry name="Reflectivity_-15C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/Reflectivity_-15C/" />
+	            <entry name="Reflectivity_-20C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/Reflectivity_-20C/" />
+	            <entry name="Reflectivity_0C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/Reflectivity_0C/" />
+		        <entry name="SeamlessHSR" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/SeamlessHSR/" />
+		        <entry name="SeamlessHSRHeight" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/SeamlessHSRHeight/" />
+			</folder>
+			<folder name="Severe Weather" >
+	            <entry name="LightningProbabilityNext30min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/LightningProbabilityNext30min/" />
+	            <entry name="MESH" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH/" />
+	            <entry name="MESH_Max_30min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH_Max_30min/" />
+	            <entry name="MESH_Max_60min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH_Max_60min/" />
+	            <entry name="MESH_Max_120min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH_Max_120min/" />
+	            <entry name="MESH_Max_360min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH_Max_360min/" />
+	            <entry name="MESH_Max_1440min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MESH_Max_1440min/" />
+	            <entry name="MergedAzShear_0-2kmAGL" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedAzShear_0-2kmAGL/" />
+	            <entry name="MergedAzShear_3-6kmAGL" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MergedAzShear_3-6kmAGL/" />
+	            <entry name="NLDN_LightningDensity_001_min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/NLDN_LightningDensity_001_min/" />
+	            <entry name="NLDN_LightningDensity_005_min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/NLDN_LightningDensity_005_min/" />
+	            <entry name="NLDN_LightningDensity_015_min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/NLDN_LightningDensity_015_min/" />
+	            <entry name="NLDN_LightningDensity_030_min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/NLDN_LightningDensity_030_min/" />
+	            <entry name="POSH" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/POSH/" />
+	            <entry name="RotationTrack30min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack30min/" />
+	            <entry name="RotationTrack60min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack60min/" />
+	            <entry name="RotationTrack120min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack120min/" />
+	            <entry name="RotationTrack240min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack240min/" />
+	            <entry name="RotationTrack360min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack360min/" />
+	            <entry name="RotationTrack1440min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrack1440min/" />
+	            <entry name="RotationTrackML30min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML30min/" />
+	            <entry name="RotationTrackML60min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML60min/" />
+	            <entry name="RotationTrackML120min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML120min/" />
+	            <entry name="RotationTrackML240min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML240min/" />
+	            <entry name="RotationTrackML360min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML360min/" />
+	            <entry name="RotationTrackML1440min" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RotationTrackML1440min/" />
+	            <entry name="SHI" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/SHI/" />
+			</folder>
+			<folder name="Precipitation" >
+	            <entry name="GaugeCorr_QPE_01H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_01H/" />
+	            <entry name="GaugeCorr_QPE_03H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_03H/" />
+	            <entry name="GaugeCorr_QPE_06H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_06H/" />
+	            <entry name="GaugeCorr_QPE_12H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_12H/" />
+	            <entry name="GaugeCorr_QPE_24H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_24H/" />
+	            <entry name="GaugeCorr_QPE_48H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_48H/" />
+	            <entry name="GaugeCorr_QPE_72H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_72H/" />
+	            <entry name="GaugeOnly_QPE_01H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_01H/" />
+	            <entry name="GaugeOnly_QPE_03H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_03H/" />
+	            <entry name="GaugeOnly_QPE_06H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_06H/" />
+	            <entry name="GaugeOnly_QPE_12H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_12H/" />
+	            <entry name="GaugeOnly_QPE_24H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_24H/" />
+	            <entry name="GaugeOnly_QPE_48H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_48H/" />
+	            <entry name="GaugeOnly_QPE_72H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_72H/" />
+	            <entry name="MountainMapper_QPE_01H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_01H/" />
+	            <entry name="MountainMapper_QPE_03H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_03H/" />
+	            <entry name="MountainMapper_QPE_06H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_06H/" />
+	            <entry name="MountainMapper_QPE_12H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_12H/" />
+	            <entry name="MountainMapper_QPE_24H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_24H/" />
+	            <entry name="MountainMapper_QPE_48H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_48H/" />
+	            <entry name="MountainMapper_QPE_72H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_72H/" />
+	            <entry name="PrecipFlag" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/PrecipFlag/" />
+	            <entry name="PrecipRate" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/PrecipRate/" />
+	            <entry name="RadarOnly_QPE_01H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_01H/" />
+	            <entry name="RadarOnly_QPE_03H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_03H/" />
+	            <entry name="RadarOnly_QPE_06H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_06H/" />
+	            <entry name="RadarOnly_QPE_12H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_12H/" />
+	            <entry name="RadarOnly_QPE_24H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_24H/" />
+	            <entry name="RadarOnly_QPE_48H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_48H/" />
+	            <entry name="RadarOnly_QPE_72H" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_72H/" />
+			</folder>
+			<folder name="Other" >
+		        <entry name="BrightBandBottomHeight" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/BrightBandBottomHeight/" />
+		        <entry name="BrightBandTopHeight" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/BrightBandTopHeight/" />
+		        <entry name="EchoTop_18" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/EchoTop_18/" />
+		        <entry name="EchoTop_30" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/EchoTop_30/" />
+		        <entry name="EchoTop_50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/EchoTop_50/" />
+		        <entry name="EchoTop_60" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/EchoTop_60/" />
+		        <entry name="H50_Above_-20C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/H50_Above_-20C/" />
+		        <entry name="H50_Above_0C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/H50_Above_0C/" />
+		        <entry name="H60_Above_-20C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/H60_Above_-20C/" />
+		        <entry name="H60_Above_0C" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/H60_Above_0C/" />
+		        <entry name="RadarQualityIndex" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/RadarQualityIndex/" />
+		        <entry name="VII" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/VII/" />
+		        <entry name="VIL" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/VIL/" />
+		        <entry name="VIL_Density" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/VIL_Density/" />
+		        <entry name="WarmRainProbability" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/WarmRainProbability/" />
+			</folder>
+	
+			<folder name="Alaska" >
+            	<entry name="EchoTop_18" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ALASKA/EchoTop_18/" />
+            	<entry name="MergedBaseReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ALASKA/MergedBaseReflectivity/" />
+            	<entry name="MergedBaseReflectivityQC" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ALASKA/MergedBaseReflectivityQC/" />
+            	<entry name="MergedReflectivityComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ALASKA/MergedReflectivityComposite/" />
+	            <entry name="MergedReflectivityQComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/ALASKA/MergedReflectivityQComposite/" />
+			</folder>
+			
+			<folder name="Caribbean" >
+                <entry name="EchoTop_18" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CARIB/EchoTop_18/" />
+            	<entry name="MergedBaseReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CARIB/MergedBaseReflectivity/" />
+            	<entry name="MergedBaseReflectivityQC" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CARIB/MergedBaseReflectivityQC/" />
+            	<entry name="MergedReflectivityComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CARIB/MergedReflectivityComposite/" />
+            	<entry name="MergedReflectivityQComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/CARIB/MergedReflectivityQComposite/" />
+			</folder>
+			
+			<folder name="Guam" >
+            	<entry name="EchoTop_18" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GUAM/EchoTop_18/" />
+            	<entry name="MergedBaseReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GUAM/MergedBaseReflectivity/" />
+            	<entry name="MergedBaseReflectivityQC" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GUAM/MergedBaseReflectivityQC/" />
+            	<entry name="MergedReflectivityComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GUAM/MergedReflectivityComposite/" />
+            	<entry name="MergedReflectivityQComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/GUAM/MergedReflectivityQComposite/" />
+			</folder>
+
+			<folder name="Hawaii" >
+            	<entry name="EchoTop_18" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HAWAII/EchoTop_18/" />
+            	<entry name="MergedBaseReflectivity" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HAWAII/MergedBaseReflectivity/" />
+            	<entry name="MergedBaseReflectivityQC" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HAWAII/MergedBaseReflectivityQC/" />
+            	<entry name="MergedReflectivityComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HAWAII/MergedReflectivityComposite/" />
+            	<entry name="MergedReflectivityQComposite" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/2D/HAWAII/MergedReflectivityQComposite/" />
+			</folder>
+
+		</folder>
+		
+		<folder name="3D Reflectivity">
+            <entry name="MergedReflectivityQC_00.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_00.50/" />
+            <entry name="MergedReflectivityQC_00.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_00.75/" />
+            <entry name="MergedReflectivityQC_01.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_01.00/" />
+            <entry name="MergedReflectivityQC_01.25" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_01.25/" />
+            <entry name="MergedReflectivityQC_01.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_01.50/" />
+            <entry name="MergedReflectivityQC_01.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_01.75/" />
+            <entry name="MergedReflectivityQC_02.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_02.00/" />
+            <entry name="MergedReflectivityQC_02.25" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_02.25/" />
+            <entry name="MergedReflectivityQC_02.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_02.50/" />
+            <entry name="MergedReflectivityQC_02.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_02.75/" />
+            <entry name="MergedReflectivityQC_03.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_03.00/" />
+            <entry name="MergedReflectivityQC_03.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_03.50/" />
+            <entry name="MergedReflectivityQC_04.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_04.00/" />
+            <entry name="MergedReflectivityQC_04.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_04.50/" />
+            <entry name="MergedReflectivityQC_05.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_05.00/" />
+            <entry name="MergedReflectivityQC_05.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_05.50/" />
+            <entry name="MergedReflectivityQC_06.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_06.00/" />
+            <entry name="MergedReflectivityQC_06.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_06.50/" />
+            <entry name="MergedReflectivityQC_07.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_07.00/" />
+            <entry name="MergedReflectivityQC_07.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_07.50/" />
+            <entry name="MergedReflectivityQC_08.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_08.00/" />
+            <entry name="MergedReflectivityQC_08.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_08.50/" />
+            <entry name="MergedReflectivityQC_09.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_09.00/" />
+            <entry name="MergedReflectivityQC_10.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_10.00/" />
+            <entry name="MergedReflectivityQC_11.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_11.00/" />
+            <entry name="MergedReflectivityQC_12.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_12.00/" />
+            <entry name="MergedReflectivityQC_13.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_13.00/" />
+            <entry name="MergedReflectivityQC_14.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_14.00/" />
+            <entry name="MergedReflectivityQC_15.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_15.00/" />
+            <entry name="MergedReflectivityQC_16.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_16.00/" />
+            <entry name="MergedReflectivityQC_17.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_17.00/" />
+            <entry name="MergedReflectivityQC_18.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_18.00/" />
+            <entry name="MergedReflectivityQC_19.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DRefl/MergedReflectivityQC_19.00/" />
+		</folder>
+		
+		<folder name="3D Reflectivity (Plus)">
+            <entry name="MergedReflectivityQC_00.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_00.50/" />
+            <entry name="MergedReflectivityQC_00.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_00.75/" />
+            <entry name="MergedReflectivityQC_01.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_01.00/" />
+            <entry name="MergedReflectivityQC_01.25" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_01.25/" />
+            <entry name="MergedReflectivityQC_01.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_01.50/" />
+            <entry name="MergedReflectivityQC_01.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_01.75/" />
+            <entry name="MergedReflectivityQC_02.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_02.00/" />
+            <entry name="MergedReflectivityQC_02.25" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_02.25/" />
+            <entry name="MergedReflectivityQC_02.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_02.50/" />
+            <entry name="MergedReflectivityQC_02.75" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_02.75/" />
+            <entry name="MergedReflectivityQC_03.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_03.00/" />
+            <entry name="MergedReflectivityQC_03.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_03.50/" />
+            <entry name="MergedReflectivityQC_04.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_04.00/" />
+            <entry name="MergedReflectivityQC_04.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_04.50/" />
+            <entry name="MergedReflectivityQC_05.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_05.00/" />
+            <entry name="MergedReflectivityQC_05.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_05.50/" />
+            <entry name="MergedReflectivityQC_06.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_06.00/" />
+            <entry name="MergedReflectivityQC_06.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_06.50/" />
+            <entry name="MergedReflectivityQC_07.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_07.00/" />
+            <entry name="MergedReflectivityQC_07.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_07.50/" />
+            <entry name="MergedReflectivityQC_08.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_08.00/" />
+            <entry name="MergedReflectivityQC_08.50" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_08.50/" />
+            <entry name="MergedReflectivityQC_09.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_09.00/" />
+            <entry name="MergedReflectivityQC_10.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_10.00/" />
+            <entry name="MergedReflectivityQC_11.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_11.00/" />
+            <entry name="MergedReflectivityQC_12.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_12.00/" />
+            <entry name="MergedReflectivityQC_13.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_13.00/" />
+            <entry name="MergedReflectivityQC_14.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_14.00/" />
+            <entry name="MergedReflectivityQC_15.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_15.00/" />
+            <entry name="MergedReflectivityQC_16.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_16.00/" />
+            <entry name="MergedReflectivityQC_17.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_17.00/" />
+            <entry name="MergedReflectivityQC_18.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_18.00/" />
+            <entry name="MergedReflectivityQC_19.00" type="REMOTE_DIR" location="https://mrms.ncep.noaa.gov/data/3DReflPlus/MergedReflectivityQC_19.00/" />
+		</folder>
+		
+		
+	</folder>
+	
+	
+	<folder name="Additional Catalogs by Organization" >
+	
+		<entry name="NOAA's National Centers for Environmental Information" type="THREDDS_CATALOG"
+			location="https://www.ncei.noaa.gov/thredds/catalog.xml" />
+
+		<entry name="NOAA's National Centers for Environmental Information (Geophysical Information)" type="THREDDS_CATALOG"
+			location="https://www.ngdc.noaa.gov/thredds/catalog.xml" />
+
+		<entry name="NOAA's National Centers for Environmental Information (Oceanographic Information)" type="THREDDS_CATALOG"
+			location="https://data.nodc.noaa.gov/thredds/catalog.xml" />
+
+		<entry name="NOAA's National Centers for Environmental Information (Coastal Information)" type="THREDDS_CATALOG"
+			location="https://ecowatch.ncddc.noaa.gov/thredds/catalog.xml" />
+
+		<entry name="NOAA's Earth Systems Research Laboratory (ESRL)" type="THREDDS_CATALOG"
+			location="https://www.esrl.noaa.gov/psd/thredds/catalog.xml" />
+
+		<entry name="NOAA's Global Earth Observation Integrated Data Environment (GEO-IDE)" type="THREDDS_CATALOG"
+			location="https://ferret.pmel.noaa.gov/uaf/thredds/CleanCatalog.html" />
+
+		<entry name="REACCH METDATA (GRIDMET) (U. of Idaho)" type="THREDDS_CATALOG"
+			location="http://thredds.northwestknowledge.net/thredds/reacch_climate_MET_aggregated_catalog.xml" />
+
+		<entry name="Oak Ridge National Lab (ORNL) DAAC" type="THREDDS_CATALOG"
+			location="https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/ornldaac.xml" />
+
+		<entry name="UCAR/Unidata (Near real-time weather/climate data distributed to .edu partners and public)" type="THREDDS_CATALOG"
+			location="https://thredds.ucar.edu/thredds/catalog.xml" />
+			
+		<entry name="USGS Center for Integrated Data Analytics (CIDA)" type="THREDDS_CATALOG"
+			location="https://cida.usgs.gov/thredds/catalog.xml" />
+			
+				
+			
+			
+
+			
+	</folder>	
+	
+<!-- 	
+	<folder name="NOAA/NWS Weather Level-3 Radar (Current from NWS)" >
+		<folder name="KGSP Greenville, SC">
+			<entry name="N0Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kgsp/sn.last" />
+			<entry name="N1Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kgsp/sn.last" />
+			<entry name="N2Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kgsp/sn.last" />
+			<entry name="N3Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kgsp/sn.last" />
+		</folder>
+		
+		<folder name="KFCX Blacksburg, VA">
+			<entry name="N0Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kfcx/sn.last" />
+			<entry name="N1Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kfcx/sn.last" />
+			<entry name="N2Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kfcx/sn.last" />
+			<entry name="N3Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kfcx/sn.last" />
+		</folder>
+		
+		<folder name="KMRX Morristown, TN">
+			<entry name="N0Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kmrx/sn.last" />
+			<entry name="N1Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kmrx/sn.last" />
+			<entry name="N2Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kmrx/sn.last" />
+			<entry name="N3Q" type="DIRECT_URL"
+				location="http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p94r0/SI.kmrx/sn.last" />
+		</folder>
+	</folder>
+	
+	<folder name="NOAA/NWS Weather Radar (Last 45 days from Unidata)" >
+		<folder name="Level-2">
+			<entry name="KGSP Greenville, SC" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level2/KGSP/catalog.xml" />
+			<entry name="KFCX Blacksburg, VA" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level2/KFCX/catalog.xml" />
+			<entry name="KMRX Morristown, TN" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level2/KMRX/catalog.xml" />
+		</folder>
+		<folder name="Level-3 Products">
+		   <folder name="KGSP Greenville, SC">
+			<entry name="N0Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N0Q/GSP/catalog.xml" />
+			<entry name="N1Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N1Q/GSP/catalog.xml" />
+			<entry name="N2Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N2Q/GSP/catalog.xml" />
+			<entry name="N3Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N3Q/GSP/catalog.xml" />
+		  </folder>
+		
+	      <folder name="KFCX Blacksburg, VA">
+			<entry name="N0Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N0Q/FCX/catalog.xml" />
+			<entry name="N1Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N1Q/FCX/catalog.xml" />
+			<entry name="N2Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N2Q/FCX/catalog.xml" />
+			<entry name="N3Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N3Q/FCX/catalog.xml" />
+		  </folder>
+		
+		  <folder name="KMRX Morristown, TN">
+			<entry name="N0Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N0Q/MRX/catalog.xml" />
+			<entry name="N1Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N1Q/MRX/catalog.xml" />
+			<entry name="N2Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N2Q/MRX/catalog.xml" />
+			<entry name="N3Q" type="THREDDS_CATALOG"
+				location="http://motherlode.ucar.edu/thredds/catalog/nexrad/level3/N3Q/MRX/catalog.xml" />
+		  </folder>
+		</folder>
+	</folder>
+ -->
+ 
+ 
+</servicesMenu>
+
+

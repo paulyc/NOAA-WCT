@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<wmsInfo>
+
+
+
+
+   <wms name="World Roads (ESRI)" index="0">
+      <capabilitiesURL
+         href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <defaultLayers>ESRI_StreetMap_World_2D
+      </defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="World Roads (OpenStreetMap)" index="0">
+      <capabilitiesURL
+         href="https://ows.terrestris.de/osm/service?SERVICE=WMS" />
+      <defaultLayers>OSM-WMS
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="http://ows.terrestris.de/dienste.html#wms"> 
+         <![CDATA[
+         ]]>
+      </info>
+   </wms>
+   
+   
+   <wms name="World Imagery (ESRI)" index="0">
+      <capabilitiesURL
+         href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <defaultLayers>ESRI_Imagery_World_2D
+      </defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="U.S. Nat. Geo. Soc. Topo (ESRI)" index="0">
+      <capabilitiesURL
+         href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <defaultLayers>NGS_Topo_US_2D
+      </defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         ]]>
+      </info>
+   </wms>
+
+    
+
+   <wms name="Color Shaded Relief (NOAA ETOPO1)" index="0">
+      <capabilitiesURL
+         href="https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/etopo1_hillshade/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0</defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         	ETOPO1 is a 1 arc-minute global relief model of Earth's surface that integrates land topography and ocean bathymetry.
+         ]]>
+      </info>
+   </wms>
+
+
+   
+   <wms name="USGS Imagery" index="0">
+      <capabilitiesURL
+         href="https://basemap.nationalmap.gov/arcgis/services/USGSImageryOnly/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0</defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Imagery Layer from USGS
+         https://viewer.nationalmap.gov/services/
+         ]]>
+      </info>
+   </wms>
+
+  <wms name="USGS Imagery Topo" index="0">
+      <capabilitiesURL
+         href="https://basemap.nationalmap.gov/arcgis/services/USGSImageryTopo/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0</defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Imagery Topo Layer from USGS
+         https://viewer.nationalmap.gov/services/
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="USGS Shaded Relief" index="0">
+      <capabilitiesURL
+         href="https://basemap.nationalmap.gov/arcgis/services/USGSShadedReliefOnly/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0</defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency></transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Shaded Relief from USGS
+         https://viewer.nationalmap.gov/services/
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="USGS Topo Map" index="0">
+      <capabilitiesURL
+         href="https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0</defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency></transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Topo Map from USGS
+         https://viewer.nationalmap.gov/services/
+         ]]>
+      </info>
+   </wms>
+
+
+
+   <wms name="Blue Marble" index="0">
+      <capabilitiesURL
+         href="http://www2.demis.nl/WMS/wms.asp?wms=BlueMarble" />
+      <defaultLayers>Earth+Image
+      </defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         NASA Blue Marble imagery served from demis.nl
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="DEMIS Global Map" index="0">
+      <capabilitiesURL
+         href="http://www2.demis.nl/WMS/wms.asp?wms=WorldMap" />
+      <defaultLayers>
+         Bathymetry,Countries,Topography,Hillshading,Coastlines,Waterbodies,Inundated,Rivers,Streams,Builtup+areas,Railroads,Highways,Roads,Trails,Borders,Cities,Settlements,Airports,Spot+elevations,Ocean+features
+      </defaultLayers>
+      <imageType>jpeg</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Global Map from demis.nl
+         ]]>
+      </info>
+   </wms>
+
+ 
+
+
+
+   <wms name="NEXRAD Coverage Map" index="1">
+      <capabilitiesURL
+         href="https://gis.ncdc.noaa.gov/arcgis/services/geo/radar_coverage/MapServer/WMSServer?service=WMS" />
+      <defaultLayers>0,1,2,3,4
+      </defaultLayers>
+      <imageType>png</imageType>
+      <transparency>false</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/data-access/radar-data"> 
+         <![CDATA[
+         Radar Coverage Map from NOAA/NCEI and NOAA/NWS Radar Operations Center
+         ]]>
+      </info>
+   </wms>
+
+
+
+
+
+
+   <wms name="Current NEXRAD Reflectivity" index="1,2">
+      <capabilitiesURL
+         href="https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi" />
+      <defaultLayers>nexrad-n0r
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Current National NEXRAD Reflectivity 
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="Current NWS Warnings" index="1,2">
+      <capabilitiesURL
+         href="https://mesonet.agron.iastate.edu/cgi-bin/wms/us/wwa.cgi" />
+      <defaultLayers>warnings_c, warnings_p
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Current NWS Warnings
+         ]]>
+      </info>
+   </wms>
+   
+   <wms name="Current GOES Satellite Visible" index="0,1,2">
+      <capabilitiesURL
+         href="https://mesonet.agron.iastate.edu/cgi-bin/wms/goes/conus_vis.cgi" />
+      <defaultLayers>conus_vis_4km
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Current GOES Satellite Visible Imagery 
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="Current GOES Satellite IR" index="0,1,2">
+      <capabilitiesURL
+         href="https://mesonet.agron.iastate.edu/cgi-bin/wms/goes/conus_ir.cgi" />
+      <defaultLayers>conus_ir_4km
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Current GOES Satellite IR Imagery 
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="Current NWS Warnings" index="1,2">
+      <capabilitiesURL
+         href="https://mesonet.agron.iastate.edu/cgi-bin/wms/us/wwa.cgi" />
+      <defaultLayers>warnings_c, warnings_p
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Current NWS Warnings
+         ]]>
+      </info>
+   </wms>
+
+
+    
+   <wms name="Watersheds (HUCs)" index="0,1,2">
+      <capabilitiesURL
+         href="https://hydro.nationalmap.gov/arcgis/services/wbd/MapServer/WMSServer?service=WMS" />
+      <defaultLayers> 0,1,2,3,4,5,6
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         USGS HUC Maps
+         ]]>
+      </info>
+      <legend
+         href="https://viewer.nationalmap.gov/services/" />
+   </wms>
+   
+   
+
+
+
+
+
+
+   <wms name="Population Density 2000 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-density_2000
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Density from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Density 2005 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-density_2005
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Density from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Density 2010 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-density_2010
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Density from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Density 2015 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-density_2015
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Density from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Density 2020 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-density_2020
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Density from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+
+   <wms name="Population Count 2000 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-count_2000
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Count from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Count 2005 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-count_2005
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Count from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Count 2010 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-count_2010
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Count from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Count 2015 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-count_2015
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Count from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   <wms name="Population Count 2020 (NASA CIESIN GRUMP)" index="0">
+      <capabilitiesURL
+         href="https://sedac.ciesin.columbia.edu/geoserver/wms" />
+      <defaultLayers>
+         gpw-v4:gpw-v4-population-count_2020
+      </defaultLayers>
+      <imageType>image/png</imageType>
+      <transparency>true</transparency>
+      <version>1.1.1</version>
+      <info href="https://www.ncdc.noaa.gov/wct"> 
+         <![CDATA[
+         Gridded Population Count from NASA CIESIN GRUMP project 
+         ]]>
+      </info>
+   </wms>
+   
+   
+</wmsInfo>

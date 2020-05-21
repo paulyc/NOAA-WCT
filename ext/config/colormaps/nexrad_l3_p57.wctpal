@@ -1,0 +1,20 @@
+# NEXRAD Level-3 palette for product code 57
+
+Units: KG/M2
+
+# Category labels are replaced by categories decoded in product header
+Unique: 15 "70 (15)" 231 0 255
+Unique: 14 "65 (14)" 255 255 255
+Unique: 13 "60 (13)" 0 0 255
+Unique: 12 "55 (12)" 174 0 0
+Unique: 11 "50 (11)" 218 0 0
+Unique: 10 "45 (10)" 255 96 96
+Unique: 9 "40 (9)" 208 208 96
+Unique: 8 "35 (8)" 255 255 112
+Unique: 7 "30 (7)" 0 187 0
+Unique: 6 "25 (6)" 0 251 144
+Unique: 5 "20 (5)" 201 112 112
+Unique: 4 "15 (4)" 238 140 140
+Unique: 3 "10 (3)" 255 170 170
+Unique: 2 "5 (2)" 118 118 118
+Unique: 1 "1 (1)" 156 156 156

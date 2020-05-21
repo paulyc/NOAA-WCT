@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<servicesMenu>
+
+	<!-- type: REMOTE_DIR, THREDDS_CATALOG, DIRECT_URL -->
+
+	<folder name="Temperature">
+		<folder name="Past">
+		
+				<entry name="Monthly Max Temperature from NOAA NCEI (nClimGrid)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/data-in-development/nclimgrid/nclimgrid_tmax.nc" />
+
+				<entry name="Monthly Min Temperature from NOAA NCEI (nClimGrid)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/data-in-development/nclimgrid/nclimgrid_tmin.nc" />
+
+				<entry name="Monthly Average Temperature from NOAA NCEI (nClimGrid)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/data-in-development/nclimgrid/nclimgrid_tavg.nc" />
+
+		
+<!-- 				<entry name="Monthly Max Temperature from Climate Divisions: NOAA NCEI (nClimDiv)" -->
+<!-- 					type="DIRECT_URL" -->
+<!-- 					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/tmax.nc" /> -->
+		
+<!-- 				<entry name="Monthly Min Temperature from Climate Divisions: NOAA NCEI (nClimDiv)" -->
+<!-- 					type="DIRECT_URL" -->
+<!-- 					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/tmin.nc" /> -->
+		
+<!-- 				<entry name="Monthly Average Temperature from Climate Divisions: NOAA NCEI (nClimDiv)" -->
+<!-- 					type="DIRECT_URL" -->
+<!-- 					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/tavg.nc" /> -->
+					
+
+		
+				<entry name="Daily Max Temperature from REACCH METDATA (GRIDMET / NLDAS)"
+					type="DIRECT_URL"
+					location="http://thredds.northwestknowledge.net/thredds/dodsC/agg_met_tmmx_1979_CurrentYear_CONUS.nc" />
+
+				<entry name="Daily Min Temperature from REACCH METDATA (GRIDMET / NLDAS)"
+					type="DIRECT_URL"
+					location="http://thredds.northwestknowledge.net/thredds/dodsC/agg_met_tmmn_1979_CurrentYear_CONUS.nc" />
+
+		</folder>
+
+		<folder name="Current">
+
+		<entry name="Recent Averages from ACIS-Maps (HPRCC)" type="THREDDS_CATALOG"
+			location="https://hprcc.unl.edu/thredds/catalog/acis/catalog.xml" />
+
+		</folder>
+		<folder name="Future">
+
+		</folder>
+	</folder>
+
+	<folder name="Precipitation">
+
+
+		<folder name="Past">
+
+				<entry name="Monthly Precipitation from NOAA NCEI (nClimGrid)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/data-in-development/nclimgrid/nclimgrid_prcp.nc" />
+		
+<!-- 				<entry name="Monthly Precipitation from Climate Divisions: NOAA NCEI (nClimDiv)" -->
+<!-- 					type="DIRECT_URL" -->
+<!-- 					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/pcp.nc" /> -->
+		
+		
+				<entry name="Daily Precipitation from REACCH METDATA (GRIDMET / NLDAS)"
+					type="DIRECT_URL"
+					location="http://thredds.northwestknowledge.net/thredds/dodsC/agg_met_pr_1979_CurrentYear_CONUS.nc" />
+
+
+		</folder>
+
+		<folder name="Current">
+
+		<entry name="Recent Accumulations from ACIS-Maps (HPRCC)" type="THREDDS_CATALOG"
+			location="https://hprcc.unl.edu/thredds/catalog/acis/catalog.xml" />
+
+
+			<folder name="NOAA-NWS Radar Sites (Level-III)">
+
+
+				<folder name="Eastern">
+
+					<folder
+						name="KAKQ,KBGM,KBOX,KBUF,KCAE,KCBW,KCCX,KCLE,KCLX,KCXX,KDIX,KDOX,KENX,KFCX,KGSP,KGYX,KILN,KLTX,KLWX,KMHX,KOKX,KPBZ,KRAX,KRLX,KTYX"
+						delimRegex="," substitution="site" tolower="true">
+						<entry name="Precipitation Rate" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last" />
+						<entry name="One Hour Accumulation (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last" />
+						<entry name="One Hour Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 3hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 24hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last" />
+						<entry name="One Hour Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last" />
+						<entry name="Storm Total Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last" />
+						<entry name="One Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last" />
+						<entry name="Three Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last" />
+						<entry name="Dig. Precip. Array (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last" />
+						<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last" />
+					</folder>
+				</folder>
+
+				<folder name="Central">
+
+					<folder
+						name="KABR,KAPX,KARX,KBIS,KCYS,KDDC,KDLH,KDMX,KDTX,KDVN,KEAX,KFSD,KFTG,KGJX,KGLD,KGRB,KGRR,KHPX,KICT,KILX,KIND,KIWX,KJKL,KLNX,KLOT,KLSX,KLVX,KMBX,KMKX,KMPX,KMQT,KMVX,KOAX,KPAH,KPUX,KRIW,KSGF,KTWX,KUDX,KUEX,KVWX"
+						delimRegex="," substitution="site" tolower="true">
+						<entry name="Precipitation Rate" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last" />
+						<entry name="One Hour Accumulation (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last" />
+						<entry name="One Hour Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 3hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 24hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last" />
+						<entry name="One Hour Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last" />
+						<entry name="Storm Total Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last" />
+						<entry name="One Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last" />
+						<entry name="Three Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last" />
+						<entry name="Dig. Precip. Array (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last" />
+						<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last" />
+					</folder>
+				</folder>
+
+				<folder name="South">
+					<folder
+						name="KABX,KAMA,KAMX,KBMX,KBRO,KBYX,KCRI,KCRP,KDFX,KDGX,KDYX,KEOX,KEPZ,KEVX,KEWX,KFDR,KFDX,KFFC,KFWS,KGRK,KGWX,KHDX,KHGX,KHTX,KINX,KJAX,KJGX,KLBB,KLCH,KLIX,KLZK,KMAF,KMLB,KMOB,KMRX,KMXX,KNQA,KOHX,KPOE,KSHV,KSJT,KSRX,KTBW,KTLH,KTLX,KVAX,KVNX"
+						delimRegex="," substitution="site" tolower="true">
+						<entry name="Precipitation Rate" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last" />
+						<entry name="One Hour Accumulation (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last" />
+						<entry name="One Hour Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 3hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 24hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last" />
+						<entry name="One Hour Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last" />
+						<entry name="Storm Total Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last" />
+						<entry name="One Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last" />
+						<entry name="Three Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last" />
+						<entry name="Dig. Precip. Array (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last" />
+						<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last" />
+					</folder>
+				</folder>
+
+				<folder name="West">
+					<folder
+						name="KATX,KBBX,KBHX,KBLX,KCBX,KDAX,KEMX,KESX,KEYX,KFSX,KGGW,KHNX,KICX,KIWA,KLGX,KLRX,KMAX,KMSX,KMTX,KMUX,KNKX,KOTX,KPDT,KRGX,KRTX,KSFX,KSOX,KTFX,KVBX,KVTX,KYUX"
+						delimRegex="," substitution="site" tolower="true">
+						<entry name="Precipitation Rate" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last" />
+						<entry name="One Hour Accumulation (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last" />
+						<entry name="One Hour Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 3hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 24hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last" />
+						<entry name="One Hour Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last" />
+						<entry name="Storm Total Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last" />
+						<entry name="One Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last" />
+						<entry name="Three Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last" />
+						<entry name="Dig. Precip. Array (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last" />
+						<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last" />
+					</folder>
+				</folder>
+
+				<folder name="Alaska, Hawaii, Puerto Rico">
+					<folder
+						name="PABC,PACG,PAEC,PAHG,PAIH,PAKC,PAPD,PHKI,PHKM,PHMO,PHWA,TJUA"
+						delimRegex="," substitution="site" tolower="true">
+						<entry name="Precipitation Rate" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.176pr/SI.${site}/sn.last" />
+						<entry name="One Hour Accumulation (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.169oh/SI.${site}/sn.last" />
+						<entry name="One Hour Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.170aa/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (Categories)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.171st/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.172dt/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 3hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u3/SI.${site}/sn.last" />
+						<entry name="User Sel. Accum. 24hr" type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.173u1/SI.${site}/sn.last" />
+						<entry name="One Hour Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.174od/SI.${site}/sn.last" />
+						<entry name="Storm Total Diff. Accum." type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.175sd/SI.${site}/sn.last" />
+						<entry name="One Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.78ohp/SI.${site}/sn.last" />
+						<entry name="Three Hour Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.79thp/SI.${site}/sn.last" />
+						<entry name="Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.80stp/SI.${site}/sn.last" />
+						<entry name="Dig. Precip. Array (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.81dpr/SI.${site}/sn.last" />
+						<entry name="Dig. Storm Total Accum. (not Dual-Pol. based)"
+							type="DIRECT_URL"
+							location="https://tgftp.nws.noaa.gov/SL.us008001/DF.of/DC.radar/DS.138dp/SI.${site}/sn.last" />
+					</folder>
+				</folder>
+
+			</folder>
+
+
+
+
+			<folder name="NOAA MRMS">
+				<entry name="GaugeCorr_QPE_01H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_01H/" />
+				<entry name="GaugeCorr_QPE_03H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_03H/" />
+				<entry name="GaugeCorr_QPE_06H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_06H/" />
+				<entry name="GaugeCorr_QPE_12H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_12H/" />
+				<entry name="GaugeCorr_QPE_24H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_24H/" />
+				<entry name="GaugeCorr_QPE_48H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_48H/" />
+				<entry name="GaugeCorr_QPE_72H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeCorr_QPE_72H/" />
+				<entry name="GaugeOnly_QPE_01H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_01H/" />
+				<entry name="GaugeOnly_QPE_03H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_03H/" />
+				<entry name="GaugeOnly_QPE_06H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_06H/" />
+				<entry name="GaugeOnly_QPE_12H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_12H/" />
+				<entry name="GaugeOnly_QPE_24H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_24H/" />
+				<entry name="GaugeOnly_QPE_48H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_48H/" />
+				<entry name="GaugeOnly_QPE_72H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/GaugeOnly_QPE_72H/" />
+				<entry name="MountainMapper_QPE_01H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_01H/" />
+				<entry name="MountainMapper_QPE_03H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_03H/" />
+				<entry name="MountainMapper_QPE_06H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_06H/" />
+				<entry name="MountainMapper_QPE_12H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_12H/" />
+				<entry name="MountainMapper_QPE_24H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_24H/" />
+				<entry name="MountainMapper_QPE_48H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_48H/" />
+				<entry name="MountainMapper_QPE_72H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/MountainMapper_QPE_72H/" />
+				<entry name="PrecipFlag" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/PrecipFlag/" />
+				<entry name="PrecipRate" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/PrecipRate/" />
+				<entry name="RadarOnly_QPE_01H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_01H/" />
+				<entry name="RadarOnly_QPE_03H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_03H/" />
+				<entry name="RadarOnly_QPE_06H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_06H/" />
+				<entry name="RadarOnly_QPE_12H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_12H/" />
+				<entry name="RadarOnly_QPE_24H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_24H/" />
+				<entry name="RadarOnly_QPE_48H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_48H/" />
+				<entry name="RadarOnly_QPE_72H" type="REMOTE_DIR"
+					location="https://mrms.ncep.noaa.gov/data/2D/RadarOnly_QPE_72H/" />
+			</folder>
+
+
+		</folder>
+
+
+		<folder name="Future">
+
+
+			<entry
+				name="1-3 Day Outlook: 12-hour Probability of Precipitation (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.pop12.bin" />
+			<entry
+				name="1-3 Day Outlook: Quantitative Precipitation Forecast (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.001-003/ds.qpf.bin" />
+
+			<entry
+				name="4-7 Day Outlook: 12-hour Probability of Precipitation (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.pop12.bin" />
+			<entry
+				name="4-7 Day Outlook: Quantitative Precipitation Forecast (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.004-007/ds.qpf.bin" />
+
+			<entry
+				name="8-14 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv14d.bin" />
+			<entry
+				name="8-14 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw14d.bin" />
+			<entry
+				name="30 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv30d.bin" />
+			<entry
+				name="30 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw30d.bin" />
+			<entry
+				name="90 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpabv90d.bin" />
+			<entry
+				name="90 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+				type="DIRECT_URL"
+				location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.conus/VP.008-450/ds.prcpblw90d.bin" />
+
+
+			<folder name="Alaska">
+				<folder name="1-3 days">
+					<entry name="12-hour Probability of Precipitation"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.pop12.bin" />
+					<entry name="Quantitative Precipitation Forecast"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.001-003/ds.qpf.bin" />
+				</folder>
+				<folder name="4-7 days">
+					<entry name="12-hour Probability of Precipitation"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.pop12.bin" />
+					<entry name="Quantitative Precipitation Forecast"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.004-007/ds.qpf.bin" />
+				</folder>
+
+				<entry
+					name="8-14 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv14d.bin" />
+				<entry
+					name="8-14 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw14d.bin" />
+				<entry
+					name="30 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv30d.bin" />
+				<entry
+					name="30 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw30d.bin" />
+				<entry
+					name="90 Day Precipitation Above Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpabv90d.bin" />
+				<entry
+					name="90 Day Precipitation Below Normal (NOAA-NWS: NDFD)"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.alaska/VP.008-450/ds.prcpblw90d.bin" />
+
+			</folder>
+			<folder name="Hawaii">
+				<folder name="1-3 days">
+					<entry name="12-hour Probability of Precipitation"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.pop12.bin" />
+					<entry name="Quantitative Precipitation Forecast"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.001-003/ds.qpf.bin" />
+				</folder>
+				<folder name="4-7 days">
+					<entry name="12-hour Probability of Precipitation"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.pop12.bin" />
+					<entry name="Quantitative Precipitation Forecast"
+						type="DIRECT_URL"
+						location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.004-007/ds.qpf.bin" />
+				</folder>
+				<entry name="8-14 Day Precipitation Above Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv14d.bin" />
+				<entry name="8-14 Day Precipitation Below Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw14d.bin" />
+				<entry name="30 Day Precipitation Above Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv30d.bin" />
+				<entry name="30 Day Precipitation Below Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw30d.bin" />
+				<entry name="90 Day Precipitation Above Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpabv90d.bin" />
+				<entry name="90 Day Precipitation Below Normal"
+					type="DIRECT_URL"
+					location="https://tgftp.nws.noaa.gov/SL.us008001/ST.opnl/DF.gr2/DC.ndfd/AR.hawaii/VP.008-450/ds.prcpblw90d.bin" />
+
+			</folder>
+
+
+		</folder>
+
+	</folder>
+
+	<folder name="Drought">
+		<folder name="Past">
+				<entry name="Gridded Palmer Drought Severity Index (PDSI) Source: REACCH METDATA (GRIDMET)"
+					type="DIRECT_URL"
+					location="http://thredds.northwestknowledge.net/thredds/dodsC/agg_met_pdsi_1979_CurrentYear_CONUS.nc" />
+<!-- 
+				<entry name="Palmer Drought Severity Index (PDSI) from Climate Divisions: NOAA NCEI (nClimDiv)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/pdsi.nc" />
+
+				<entry name="Palmer Hydrologic Drought Index (PHDI) from Climate Divisions: NOAA NCEI (nClimDiv)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/phdi.nc" />
+
+				<entry name="Palmer Modified Drought Index (PMDI) from Climate Divisions: NOAA NCEI (nClimDiv)"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/pmdi.nc" />
+-->
+
+		</folder>
+<!-- 
+		<folder name="Current">
+				<entry name="Palmer Hydrologic Drought Index (PHDI) Source: NOAA NCEI / NIDIS Drought Amelioration"
+					type="DIRECT_URL"
+					location="https://www.ncei.noaa.gov/thredds/dodsC/gcag/monthly/wmp-phdi.nc" />
+
+		</folder>
+		<folder name="Future">
+
+		</folder>
+-->
+
+	</folder>
+
+
+</servicesMenu>
+
+

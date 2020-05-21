@@ -1,0 +1,26 @@
+# WCT palette - similar to other palettes, but alpha
+# is added and values are optional.  If the 
+# value is specified as 'NA' for any color, 
+# the max/min values of the data will be used
+# and the colors interpolated across the range
+# of values.
+
+# TDWR Reflectivity TRx
+
+Units: dBZ
+
+Unique: 15 "75" 235 235 235
+Unique: 14 "70" 153 85 201
+Unique: 13 "65" 255 0 255
+Unique: 12 "60" 192 0 0
+Unique: 11 "55" 214 0 0
+Unique: 10 "50" 255 0 0
+Unique: 9 "45" 255 144 0
+Unique: 8 "40" 231 192 0
+Unique: 7 "35" 255 255 0
+Unique: 6 "30" 0 144 0
+Unique: 5 "25" 0 200 0
+Unique: 4 "20" 0 255 0
+Unique: 3 "15" 0 0 246
+Unique: 2 "10" 1 160 246
+Unique: 1 "5" 0 236 236

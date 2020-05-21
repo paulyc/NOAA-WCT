@@ -1,0 +1,13 @@
+# NEXRAD Level-3 palette for product code 30
+
+Units: KT
+
+# Category labels are replaced by categories decoded in product header
+
+Unique: 7 "RF (7)" 119 0 125
+Unique: 6 "20 (6)" 255 255 0
+Unique: 5 "16 (5)" 208 112 0
+Unique: 4 "12 (4)" 255 0 0
+Unique: 3 "8 (3)" 0 187 0
+Unique: 2 "4 (2)" 156 156 156
+Unique: 1 "0 (1)" 118 118 118

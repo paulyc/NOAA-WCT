@@ -1,0 +1,22 @@
+# NEXRAD Level-3 palette for product code 37
+# NCR Composity Refl. 
+
+Units: dBZ
+
+# Category labels are replaced by categories decoded in product header
+
+Unique: 15 "75" 235 235 235
+Unique: 14 "70" 153 85 201
+Unique: 13 "65" 255 0 255
+Unique: 12 "60" 192 0 0
+Unique: 11 "55" 214 0 0
+Unique: 10 "50" 255 0 0
+Unique: 9 "45" 255 144 0
+Unique: 8 "40" 231 192 0
+Unique: 7 "35" 255 255 0
+Unique: 6 "30" 0 144 0
+Unique: 5 "25" 0 200 0
+Unique: 4 "20" 0 255 0
+Unique: 3 "15" 0 0 246
+Unique: 2 "10" 1 160 246
+Unique: 1 "5" 0 236 236

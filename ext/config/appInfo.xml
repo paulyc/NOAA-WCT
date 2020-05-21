@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<appInfo>
+
+   <app name="Leaflet Test" >
+      <url href="http://gis.fluxmess.com/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+
+   <app name="CRT Climate Explorer (sansari.dev)" >
+      <url href="http://sansari.dev.ncdc.noaa.gov/climate-explorer" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="CRT Climate Explorer (crt.test)" >
+      <url href="http://crt.test.ncdc.noaa.gov/climate-explorer" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="CRT Climate Explorer (toolkit.climate.gov)" >
+      <url href="http://toolkit.climate.gov/climate-explorer" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+
+   <app name="NOAA/NCDC Storm Events Database" >
+      <url href="https://www.ncdc.noaa.gov/stormevents/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="CoCoRaHS Classic Map" >
+      <url href="http://www.cocorahs.org/Maps/ViewMap.aspx?state=usa" />
+      <icon href="" />
+      <info href=""> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   <app name="CoCoRaHS Google Map" >
+      <url href="http://data.cocorahs.org/cocorahs/maps/" />
+      <icon href="" />
+      <info href=""> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   <app name="CPC 6-10 day temperature" >
+      <url href="http://www.cpc.ncep.noaa.gov/products/predictions/610day/610temp.new.gif" />
+      <icon href="" />
+      <info href=""> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   <app name="CPC 6-10 day precipitation" >
+      <url href="http://www.cpc.ncep.noaa.gov/products/predictions/610day/610prcp.new.gif" />
+      <icon href="" />
+      <info href=""> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   
+
+   <app name="NOAA nowCoast GIS" >
+      <url href="http://nowcoast.noaa.gov/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="NOAA Vis. Lab (NOAA View)" >
+      <url href="http://www.nnvl.noaa.gov/view/" />
+      <icon href="http://www.nnvl.noaa.gov/view/" />
+      <info href="http://www.nnvl.noaa.gov/view/"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+
+
+   <app name="SPC Mesoscale Analysis" >
+      <url href="http://www.spc.noaa.gov/exper/mesoanalysis/new/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="ACIS-Drought" >
+      <url href="http://drought.rcc-acis.org/#" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="WunderMap" >
+      <url href="http://www.wunderground.com/wundermap/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="ESRI Severe Weather Map" >
+      <url href="http://www.esri.com/services/disaster-response/severe-weather/latest-news-map" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="SPC Storm Reports" >
+      <url href="http://www.spc.noaa.gov/climo/reports/today.html" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="NMQ" >
+      <url href="http://nmq.ou.edu/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   <app name="WeatherSpark" >
+      <url href="http://weatherspark.com/" />
+      <icon href="https://www.ncdc.noaa.gov/arcwms/wms?" />
+      <info href="https://www.ncdc.noaa.gov/oa/wct"> 
+         <![CDATA[
+         Information about the app
+         ]]>
+      </info>
+   </app>
+   
+   
+   
+</appInfo>
+
+

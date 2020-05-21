@@ -1,0 +1,17 @@
+key|desc|color-table
+C01|"Blue" Band (Visible)|Grayscale
+C02|"Red" Band (Visible)|Grayscale
+C03|"Veggie" Band (Near-IR)|Grayscale
+C04|"Cirrus" Band (Near-IR)|Grayscale
+C05|"Snow/Ice" Band (Near-IR)|Grayscale
+C06|"Cloud Particle Size" Band (Near-IR)|Grayscale
+C07|"Shortwave Window" Band (IR (with reflected daytime Component))|Grayscale
+C08|"Upper-Level Tropospheric Water Vapor" Band (IR)|Grayscale; flip
+C09|"Mid-Level Tropospheric Water Vapor" Band (IR)|Grayscale; flip
+C10|"Lower-Level Water Vapor" Band (IR)|Grayscale; flip
+C11|"Cloud-Top Phase" Band (IR)|Grayscale; flip
+C12|"Ozone" Band (IR)|Grayscale; flip
+C13|"Clean" Longwave Window Band (IR)|Dry (Red) - Wet (Blue); flip
+C14|Longwave Window Band (IR)|Grayscale; flip
+C15|"Dirty" Longwave Window Band (IR)|Grayscale; flip
+C16|"CO2" Longwave Window Band (IR)|Grayscale; flip

@@ -1,0 +1,23 @@
+# NEXRAD Level-3 palette for product code 41
+#   AWIPS HEADER CODE: NET 
+#   PRODUCT CODE: 41
+
+Units: KFT
+
+# Category labels are replaced by categories decoded in product header
+
+Unique: 15 "70 (15)" 231 0 255
+Unique: 14 "65 (14)" 255 255 255
+Unique: 13 "60 (13)" 255 0 0
+Unique: 12 "55 (12)" 174 0 0
+Unique: 11 "50 (11)" 255 255 0
+Unique: 10 "45 (10)" 254 191 0
+Unique: 9 "40 (9)" 0 239 0
+Unique: 8 "35 (8)" 0 187 0
+Unique: 7 "30 (7)" 0 251 144
+Unique: 6 "25 (6)" 50 0 150
+Unique: 5 "20 (5)" 0 144 204
+Unique: 4 "15 (4)" 0 176 255
+Unique: 3 "10 (3)" 0 224 255
+Unique: 2 "5 (2)" 118 118 118
+Unique: 1 "0 (1)" 156 156 156
